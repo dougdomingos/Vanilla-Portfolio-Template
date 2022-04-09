@@ -1,0 +1,59 @@
+.home {
+  overflow: hidden;
+  background: url("../../img/backgrounds/code-bg-480.webp") center/cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  // changes background image for performance
+  @include responsive($phone) {
+    background-image: url("../../img/backgrounds/code-bg-600.webp");
+  }
+
+  @include responsive($laptop) {
+    background-image: url("../../img/backgrounds/code-bg-992.webp");
+  }
+
+  @include responsive($desktop) {
+    background-image: url("../../img/backgrounds/code-bg-full.webp");
+  }
+}
+
+.home__title {
+  width: min-content;
+  color: white;
+  text-align: center;
+  margin-bottom: $space-22;
+
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      font: 150% "Fira Mono", monospace;
+      color: $main;
+      margin-bottom: $space-6;
+    }
+
+    &:nth-child(2) {
+      font: 700 300% "Inter", sans-serif;
+    }
+
+    &:nth-child(3) {
+      font: 400 175% "Inter", sans-serif;
+      opacity: 0.8;
+    }
+  }
+
+  // increase home title font-size equally
+  @include responsive($tablet) {
+    font-size: $size-20;
+  }
+
+  @include responsive($laptop) {
+    font-size: $size-24;
+  }
+}
+
+// add delay to home CTA animation
+.home__cta .fade-up {
+  animation-fill-mode: backwards;
+  animation-delay: 750ms;
+}

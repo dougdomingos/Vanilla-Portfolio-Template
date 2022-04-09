@@ -1,0 +1,34 @@
+// Color palettte
+$main: #9734f1;
+$white: #f6f6f6;
+$black: #0e0c0f;
+$shadow: transparentize(
+  $color: $black,
+  $amount: 0.9,
+);
+
+// Size variables
+$header-height: 80px;
+$header-shrinked: 60px;
+
+// Font sizes (considering 1rem = 16px)
+$size-12: 0.75rem;
+$size-16: 1rem;
+$size-20: 1.25rem;
+$size-24: 1.5rem;
+$size-30: 1.875rem;
+
+// Spacing sizes for padding and margin
+$space-6: 0.25em;
+$space-12: 0.75em;
+$space-16: 1em;
+$space-22: 1.375em;
+$space-28: 1.75em;
+$space-32: 2em;
+$space-48: 3em;
+
+// Media query breakpoints
+$phone: "min-width: 480px";
+$tablet: "min-width: 600px";
+$laptop: "min-width: 768px";
+$desktop: "min-width: 992px";

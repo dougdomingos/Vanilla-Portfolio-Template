@@ -1,0 +1,6 @@
+// Media query mixin
+@mixin responsive($breakpoint) {
+  @media only screen and (#{$breakpoint}) {
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+.card-wrapper {
+  align-items: stretch;
+  gap: $space-16;
+
+  @include responsive($laptop) {
+    gap: $space-22;
+  }
+}

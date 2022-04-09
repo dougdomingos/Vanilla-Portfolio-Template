@@ -1,0 +1,40 @@
+.nav__navlink {
+  position: relative;
+  text-decoration: none !important;
+  color: $white;
+  font-size: $size-30;
+
+  // underline for active navlinks
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: $white;
+    transition: width 250ms ease-out;
+  }
+
+  @include responsive($tablet) {
+    font-size: $size-20;
+    opacity: 0.75;
+  }
+}
+
+.navlink-active {
+  opacity: 1;
+
+  // underline animation (on visible nav only)
+  @include responsive($tablet) {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.nav__navlink:hover {
+  @include responsive($tablet) {
+    opacity: 1;
+  }
+}

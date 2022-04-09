@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page information -->
+    <title>Douglas D. Silva - Web Developer</title>
+    <meta
+      name="description"
+      content="Check out my skills and hire me for your next sucessful project!"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icon Kit -->
+    <script
+      src="https://kit.fontawesome.com/64f5dbe1b0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="container flex">
+        <span class="header__title">://doug</span>
+        <nav id="header-nav" class="header__nav">
+          <ul class="h-100 flex--column flex--centered">
+            <li>
+              <a href="#home" class="nav__navlink nav-toggle navlink-active"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav__navlink nav-toggle">Skills</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__navlink nav-toggle">About Me</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="menu-btn" class="nav-toggle" aria-label="Toggle navbar">
+          <span class="fa-solid fa-bars"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Home section -->
+      <section id="home" class="section home">
+        <div class="container flex--column flex--centered">
+          <div class="home__title fade-down" role="heading" aria-level="2">
+            <span>Grettings!</span>
+            <span>I'm&nbsp;Douglas</span>
+            <span>Web Developer</span>
+          </div>
+          <div class="home__cta">
+            <a href="#about">
+              <button href="#about" class="btn--cta fade-up" onclick="">
+                Know me!
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills" class="section skills">
+        <div class="container flex--column">
+          <h1 class="section__title">My Skills</h1>
+          <div class="card-wrapper flex--wrap flex--centered">
+            <div class="card flex--column flex--centered">
+              <div class="card__image">
+                <img
+                  src="img/icons/frontend.webp"
+                  alt="An ilustrated browser window showingthe source code 
+                  and the UI of the page"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__text">
+                <strong>Frontend</strong>
+                <p>
+                  I create interactive, mobile&nbsp;first and SEO&nbsp;optimized
+                  websites
+                </p>
+              </div>
+            </div>
+            <div class="card flex--column flex--centered">
+              <div class="card__image">
+                <img
+                  src="img/icons/sass.webp"
+                  alt="HTML, CSS and Javascript brands"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__text">
+                <strong>Sass</strong>
+                <p>
+                  I work with <a href="https://sass-lang.com">Sass</a> to keep
+                  styling maintainable without losing productivity
+                </p>
+              </div>
+            </div>
+            <div class="card flex--column flex--centered">
+              <div class="card__image">
+                <img
+                  src="img/icons/python.webp"
+                  alt="The Python programming language logo"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__text">
+                <strong>Python</strong>
+                <p>
+                  I have experience with developing small web applications using
+                  <a href="https://python.org">Python</a> and
+                  <a href="https://flask.palletsprojects.com/en/2.1.x/"
+                    >Flask</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card flex--column flex--centered">
+              <div class="card__image">
+                <img
+                  src="img/icons/data-structures.webp"
+                  alt="The Python programming language logo"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__text">
+                <strong>Algorithms & Data&nbsp;Structures</strong>
+                <p>
+                  I have some experience with Hash Tables, Linked Lists, Merge
+                  Sort and Selection Sort
+                </p>
+              </div>
+            </div>
+            <div class="card flex--column flex--centered">
+              <div class="card__image">
+                <img
+                  src="img/icons/github.webp"
+                  alt="The Python programming language logo"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__text">
+                <strong>Git & GitHub</strong>
+                <p>
+                  Working with <a href="https://git-scm.com/">Git</a> to keep my
+                  projects organized and hosting them on
+                  <a href="https://github.com">GitHub</a> is a piece of cake for
+                  me
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="about" class="section about">
+        <div class="container flex--column">
+          <h1 class="section__title">About Me</h1>
+          <div class="info-wrapper flex--column">
+            <div class="info__image">
+              <!-- TODO: Add photo -->
+              <img
+                src="img/favicon.svg"
+                alt="A photo of the owner of this website"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="info__text">
+              <h2>Douglas Domingos</h2>
+              <p>
+                I'm a self-taught web developer who's always searching for new
+                opportunities learn something new. In the next months, I'll be
+                entering a Computer Science graduation at Federal University of
+                Campina Grande (UFCG).
+              </p>
+            </div>
+            <div class="info__social">
+              <ul class="flex">
+                <li>
+                  <a
+                    href="https://www.instagram.com/dougdomingossilva/"
+                    title="Visit my Instagram!"
+                    class="social__link fa-brands fa-instagram"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:doug.domingossilva@gmail.com"
+                    title="Send me an email!"
+                    class="social__link fa-solid fa-envelope"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/dougdomingos"
+                    title="Check out my GitHub!"
+                    class="social__link fa-brands fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container flex">
+        <span>
+          2022 &copy; Douglas Domingos<br />
+          All rights reserved
+        </span>
+        <div class="footer__attributions">
+          <span>Attributions</span>
+          <ul class="footer__attributions">
+            <li>
+              <a
+                href="https://www.flaticon.com/free-icons/front-end"
+                title="front end icons"
+              >
+                Front end icons by Flat Icons - Flaticon
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.flaticon.com/free-icons/sass"
+                title="sass icons"
+              >
+                Sass icons by Freepik - Flaticon
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.flaticon.com/free-icons/structure"
+                title="structure icons"
+              >
+                Structure icons by Flat Icons - Flaticon
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.flaticon.com/free-icons/python"
+                title="python icons"
+              >
+                Python icons by Freepik - Flaticon
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.flaticon.com/free-icons/github"
+                title="github icons"
+              >
+                Github icons by Freepik - Flaticon
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

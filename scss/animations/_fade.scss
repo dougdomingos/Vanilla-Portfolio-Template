@@ -1,0 +1,27 @@
+// Keyframe mixin
+@mixin fade-anim($anim-name, $posX, $posY) {
+  @keyframes #{$anim-name} {
+    from {
+      transform: translate($posX, $posY);
+      opacity: 0;
+    }
+
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+// Animation build
+@include fade-anim("fade_up", 0, 300px);
+@include fade-anim("fade_down", 0, -300px);
+
+// Animation classes
+.fade-up {
+  animation: fade_up 1000ms;
+}
+
+.fade-down {
+  animation: fade_down 1000ms;
+}

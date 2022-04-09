@@ -1,0 +1,32 @@
+.btn {
+  cursor: pointer;
+  font-size: $size-20;
+  padding: $space-12 $space-16;
+
+  &--cta {
+    @extend .btn;
+    color: $white;
+    font-size: $size-20;
+    background-color: darken($color: $main, $amount: 15);
+    border-radius: 10px;
+
+    @include responsive($laptop) {
+      font-size: $size-24;
+      transition: transform 200ms, background-color 200ms;
+
+      &:hover {
+        transform: scale(1.05);
+        background-color: $main;
+      }
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+// rotate icon when clicked
+.menu-active {
+  transform: rotate(90deg);
+}

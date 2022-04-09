@@ -1,0 +1,32 @@
+.section {
+  background-color: darken($color: $white, $amount: 5);
+  padding-top: $header-shrinked + 10;
+
+  &.home {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+.section__title {
+  position: relative;
+  display: inline;
+  font-size: $size-24;
+  text-align: center;
+  margin-bottom: $space-22;
+
+  @include responsive($tablet) {
+    font-size: $size-30;
+  }
+}
+
+// underline on section titles
+.section__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 5%;
+  width: 90%;
+  height: 5px;
+  background-color: $main;
+}
