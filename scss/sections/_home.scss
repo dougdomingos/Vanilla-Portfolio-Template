@@ -1,19 +1,19 @@
 .home {
   overflow: hidden;
-  background: url("../../img/code-bg-480.webp") center/cover;
+  background: url("img/code-bg-480.webp") center/cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
   // changes background image for performance
   @include responsive($phone) {
-    background-image: url("../../img/code-bg-600.webp");
+    background-image: url("img/code-bg-600.webp");
   }
 
   @include responsive($laptop) {
-    background-image: url("../../img/code-bg-992.webp");
+    background-image: url("img/code-bg-992.webp");
   }
 
   @include responsive($desktop) {
-    background-image: url("../../img/code-bg-full.webp");
+    background-image: url("img/code-bg-full.webp");
   }
 }
 
