@@ -25,4 +25,5 @@ I also focused on improving performance, accessibility and SEO, reaching a near 
 ![Lighthouse score on desktop screens](/public/lighthouse-desktop.png)
 
 **Lighthouse Score on mobile**
+
 ![Lighthouse score on mobile screens](public/lighthouse-mobile.png)
