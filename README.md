@@ -1,6 +1,8 @@
-# Vanilla Portfolio
+# **Vanilla Portfolio**
 
 This is an old project of mine, built entirely with HTML, Sass and pure Javascript.
+
+![Portfolio Home section](public/portfolio-home.png)
 
 ## Stack
 - HTML
@@ -17,3 +19,10 @@ On this project, I aimed to improve my design abilities without using any framew
 like Bootstrap and jQuery.
 
 I also focused on improving performance, accessibility and SEO, reaching a near perfect Lighthouse score.
+
+**Lighthouse Score on desktop**
+
+![Lighthouse score on desktop screens](/public/lighthouse-desktop.png)
+
+**Lighthouse Score on mobile**
+![Lighthouse score on mobile screens](public/lighthouse-mobile.png)
